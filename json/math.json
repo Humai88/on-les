@@ -1,0 +1,10 @@
+{
+  "post1": {
+    "title": "Математика",
+    "content": "Данная игра отлично подойдет как прием для закрепления изученного материала. Также ее можно исп.",
+    "image": "img/posts/post2.JPG",
+    "link": "downloads/Выбери номер.pptx",
+    "prevImage": "img/preview/math/post1.jpg",
+    "prevTitle": "Математика"
+  }
+}

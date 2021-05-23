@@ -63,7 +63,6 @@ function createCards() {
         });
 
         function getData(e) {
-          window.scrollTo(0, 0);
           let target = e.target;
           article.classList.remove("hide");
           article.classList.add("show");
@@ -80,6 +79,7 @@ function createCards() {
               articleContent.innerHTML = data[key].content;
             }
           }
+          // window.scrollTo(0, 0);
         }
 
         closeTrigger.addEventListener("click", () => {

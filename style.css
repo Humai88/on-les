@@ -4,9 +4,13 @@
 body {
   font-family: "Montserrat";
   color: #f9faf9;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 img {
+  width: auto;
   display: block;
   max-width: 100%;
   height: auto;
@@ -39,11 +43,11 @@ img {
 .nav-link {
   font-family: "Comfortaa";
   font-size: 1.6rem;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .nav-link:hover {
   text-decoration: underline;
-  color: #d26de2 !important;
+  color: #d588e0 !important;
 }
 .nav-link:active {
   color: #e6e4e4 !important;
@@ -167,10 +171,10 @@ img {
   transition: 0.5s;
 }
 .press-btn:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .press-btn:active {
-  transform: scale(0.3);
+  transform: scale(0.9);
 }
 
 #scroll-top-btn {
@@ -233,9 +237,7 @@ img {
   filter: grayscale(90%);
   -webkit-filter: grayscale(90%);
 }
-.footer-img:active {
-  transform: scale(0.2);
-}
+
 .copyright {
   text-align: center;
   font-family: "Comfortaa";
@@ -310,17 +312,32 @@ img {
   max-height: 4rem;
   width: 100%;
   cursor: pointer;
-  transition: 0.4s;
-  color: #313131;
+  transition: 0.3s;
+
   text-align: center;
   letter-spacing: -0.3px;
 }
+:root {
+  --mainColor: #d588e0;
+}
+
+.card-title {
+  background: linear-gradient(
+    to bottom,
+    var(--mainColor) 0%,
+    var(--mainColor) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 0px 0px;
+  color: #252525;
+  transition: background-size 0.2s;
+}
 
 .card-title:hover {
-  letter-spacing: 1.3px;
-  color: #0e0d0d;
-  text-decoration: underline;
+  background-size: 4px 50px;
 }
+
 .post-link {
   color: #197163;
   font-size: 1.3rem;
@@ -758,7 +775,7 @@ img {
   }
   .main-header {
     margin-top: 0;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .navbar {
     padding-bottom: 0;
@@ -766,7 +783,7 @@ img {
 
   .features-header {
     font-weight: 900;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 4%;
   }
   .features-subheader {
@@ -775,10 +792,10 @@ img {
 
   .brand {
     font-family: "Pacifico";
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .about-descr {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     max-width: 100%;
     margin: 0 auto;
     margin-top: 7%;
@@ -803,7 +820,7 @@ img {
     margin: 0 auto;
   }
   .footer-img {
-    width: 5%;
+    width: 8%;
   }
   .copyright {
     font-size: 0.5rem;
